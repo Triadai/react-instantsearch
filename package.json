@@ -1,4 +1,7 @@
 {
+  "name": "react-instantsearch",
+  "main": "packages/react-instantsearch/index.js",
+  "module": "packages/react-instantsearch/es/index.js",
   "private": true,
   "version": "4.0.0",
   "scripts": {
