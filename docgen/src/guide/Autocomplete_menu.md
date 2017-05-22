@@ -1,6 +1,6 @@
 ---
 title: Autocomplete menu
-mainTitle: Guide
+mainTitle: Guides
 layout: main.pug
 category: guide
 navWeight: 20
@@ -22,5 +22,8 @@ them you can read their guide first:
 <div class="guide-nav">
     <div class="guide-nav-left">
         Previous: <a href="guide/Server-Side_rendering.html">← Server-side Rendering</a>
+    </div>
+    <div class="guide-nav-right">
+        Next: <a href="guide/Migration_guides.html">Migration guides →</a>
     </div>
 </div>
