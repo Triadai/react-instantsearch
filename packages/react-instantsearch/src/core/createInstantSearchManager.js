@@ -152,27 +152,19 @@ export default function createInstantSearchManager({
       results = content;
     }
 
-    const nextState = omit(
-      {
-        ...store.getState(),
-        results,
-        searching: false,
-      },
-      'resultsFacetValues'
-    );
-    store.setState(nextState);
+    store.setState({
+      ...store.getState(),
+      results,
+      searching: false,
+    });
   }
 
   function handleSearchError(error) {
-    const nextState = omit(
-      {
-        ...store.getState(),
-        error,
-        searching: false,
-      },
-      'resultsFacetValues'
-    );
-    store.setState(nextState);
+    store.setState({
+      ...store.getState(),
+      error,
+      searching: false,
+    });
   }
 
   // Called whenever a widget has been rendered with new props.
